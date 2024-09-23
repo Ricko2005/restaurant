@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+   
+scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --first: #fff;
+    --black: #000;
+    --btn :#EA6D27;
+}
+
+#reservation{
+ 
+    display: flex;
+    margin-bottom: 15%;
+}
+.input-field{
+    position: relative;
+}
+.input-field input{
+    width: 320px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #000;
+    background: transparent;
+    outline: none;
+   
+}
+.input-field label{
+position: absolute;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+color: #000;
+font-size: 19px;
+pointer-events: none;
+transition: .3s;
+
+
+}
+input:focus{
+    border: 2px solid #000;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: 0;
+    color: #EA6D27;
+    font-size: 16px;
+    padding: 0 16px;
+    background-color: #fff;
+}
+
+#one{
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+}
+#two{
+    margin:30px;
+    display: flex;
+    gap: 15px;
+}
+#fac{
+    width: 700px;
+    margin-top: 5%;
+    margin-left: 7px;
+
+}
+#fac input{
+  top: 80%;
+    position: absolute;
+    left: 20%;
+}
+form {
+    background-color: #fff;
+    box-shadow: 20px 20px 30px gray;
+    padding-top: 25%;
+    margin-top: -3%;
+    height: 550px;
+  }
+form button{
+    font-family: "Poppins", sans-serif;
+    width: 650px;
+    padding-top: 10%;
+    padding: 20px;
+    background-color: #EA6D27;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+}
+h1{
+    margin-left: 20;
+    margin-top: -20%;
+    color: #EA6D27;
+}
